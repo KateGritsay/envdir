@@ -14,7 +14,7 @@ import (
 
 func Envdir(in io.Reader, out io.Writer, errWriten io.Writer, args []string) error {
 	if len(args) != 2{
-		return errors.New("It has to have two arguments: fileName and path")
+		return errors.New("You need two arguments: fileName and path")
 	}
 	path := args[0]
 	progName := args[1]
